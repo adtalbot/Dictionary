@@ -13,4 +13,8 @@ class Definition
   define_singleton_method(:all) do
     @@definition_list
   end
+
+  define_method(:save) do
+    @@definition_list.push(self)
+  end
 end
