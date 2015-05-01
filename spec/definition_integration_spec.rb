@@ -12,4 +12,10 @@ describe(Definition) do
       expect(test_definition.definition()).to(eq('a red fruit'))
     end
   end
+
+  describe('.all') do
+    it('is empty at first') do
+      expect(Definition.all()).to(eq([]))
+    end
+  end
 end

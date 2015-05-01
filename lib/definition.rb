@@ -9,4 +9,8 @@ class Definition
   define_singleton_method(:clear) do
     @@definition_list = []
   end
+
+  define_singleton_method(:all) do
+    @@definition_list
+  end
 end
